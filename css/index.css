@@ -1,3 +1,9 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -194,12 +200,6 @@ a {
   font-size: 1.5em;
   align-self: center;
 }
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-bottom: 2px dashed #C0C0C0;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -210,6 +210,33 @@ a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 800px;
+  margin: 2%;
+}
+.home header nav h1 {
+  width: 70%;
+  align-self: flex-start;
+}
+.home header nav a {
+  width: 30%;
+  display: flex;
+  color: black;
+  font-size: 1.5em;
+  align-self: center;
+}
+.home header div {
+  padding: 2em 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -256,4 +283,15 @@ a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination div {
+  color: lightcyan;
+  background-color: darkcyan;
+  padding: 1em;
+  border: 1px solid darkcyan;
+  border-radius: 15px;
+  width: 60%
+    display: flex;
+  text-align: center;
+  font-size: 1.3em;
 }

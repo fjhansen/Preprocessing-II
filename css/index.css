@@ -182,6 +182,11 @@ a {
   flex-direction: column;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .nav {
+    margin-top: 2%;
+  }
+}
 .nav nav {
   display: flex;
   flex-direction: row;
@@ -189,9 +194,22 @@ a {
   max-width: 800px;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .nav nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .nav nav h1 {
   width: 70%;
   align-self: flex-start;
+}
+@media (max-width: 500px) {
+  .nav nav h1 {
+    align-self: center;
+    flex-direction: column;
+  }
 }
 .nav nav a {
   width: 30%;
@@ -199,6 +217,17 @@ a {
   color: black;
   font-size: 1.5em;
   align-self: center;
+}
+@media (max-width: 500px) {
+  .nav nav a {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border: 2PX solid red;
+  }
 }
 .footer {
   width: 100%;
@@ -227,6 +256,11 @@ a {
   justify-content: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home header {
+    margin-top: 2%;
+  }
+}
 .home header nav {
   display: flex;
   flex-direction: row;
@@ -234,9 +268,22 @@ a {
   max-width: 800px;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .home header nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .home header nav h1 {
   width: 70%;
   align-self: flex-start;
+}
+@media (max-width: 500px) {
+  .home header nav h1 {
+    align-self: center;
+    flex-direction: column;
+  }
 }
 .home header nav a {
   width: 30%;
@@ -244,6 +291,17 @@ a {
   color: black;
   font-size: 1.5em;
   align-self: center;
+}
+@media (max-width: 500px) {
+  .home header nav a {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border: 2PX solid red;
+  }
 }
 .home header div {
   padding: 2em 0;

@@ -1,1 +1,76 @@
 // Navigation Styles here
+.container.home {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+}
+}
+
+.nav {
+    @media @mobile {
+        
+       
+        margin-top: 2%;
+    } 
+    nav {
+        display: flex;
+        flex-direction: row;
+        
+        
+        width: 100%;
+      
+        max-width: 800px;
+        margin: 2%;
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+        h1 {
+           width: 70%;
+           align-self: flex-start;
+           @media @mobile {
+           
+            align-self: center;
+            flex-direction: column;
+            
+                          
+
+        }
+        }
+
+        a {
+            width: 30%;
+            display: flex;
+            color: black;
+            font-size: 1.5em;
+            align-self: center;
+
+            @media @mobile {
+                display: flex;
+                justify-content: space-between;
+               
+                text-align: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 100%;
+                
+                border: 2PX solid red;
+               
+                
+               
+               
+            }
+            
+        }
+    }
+
+}
+
+
+
+

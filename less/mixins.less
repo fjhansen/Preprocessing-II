@@ -10,6 +10,7 @@
 }
 
 .button(@color1,@color2,@radius) {
+
    
     
     color: @color1;
@@ -17,9 +18,24 @@
     padding: 1em; 
     border: 1px solid @color2 ; 
     border-radius: @radius;
-    width: 60%
+    width: 60%;
     display: flex;
     text-align: center;
-    font-size: 1.3em;  
+    font-size: 1.3em; 
 
-}//buttons
+}
+
+
+.buttonM(@color1,@color2,@radius) {
+
+   
+    
+    background-color: @color1;
+    color: @color2;
+    border: solid @color1 1px;
+    border-radius: @radius;
+    font-size: 1.5rem;
+    padding: 1%;
+    text-align: center;
+
+}

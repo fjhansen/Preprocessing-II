@@ -1,5 +1,13 @@
 .home {
-
+@media @mobile {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  
+}
 header {
 
   .nav();
@@ -23,17 +31,34 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+     
+      justify-content: flex-start;
+      align-content: center;
+      padding: 1em;
+      margin: .5em;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        text-align: start;
+        padding: 2em;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -57,6 +82,10 @@ header {
   }
 
   .content-destination {
+    
+    @media @mobile {
+      width: 98%;
+    }
     width: 75%;
     margin: 0 auto 30px;
 
@@ -66,17 +95,46 @@ header {
   }
 
   .content-pick {
+    @media @mobile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+     
+    }
+    
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+
 
     .destination {
+      
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        text-align: start;
+           h4 {
+             text-align: center;
+           }
+      }
+      
       width: 30%;
       margin-bottom: 30px;
 
-      div {
-        .button(lightcyan,darkcyan,15px)
+
+      div { 
+        @media @mobile {
+        .buttonM (darkcyan,lightcyan,15px);
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        padding: 2%;
+      }
+        .button(lightcyan,darkcyan,15px);
+       
       }
     }
   }
